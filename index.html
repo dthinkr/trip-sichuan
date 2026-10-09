@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>川西 + 九寨沟 行程 · 11/4–11/16</title>
-<meta name="description" content="2026年11月 成都·九寨沟·黄龙·塔公·四姑娘山 13天行程">
+<title>川西 + 九寨沟 行程 · 10/30–11/14</title>
+<meta name="description" content="2026年11月 成都·九寨沟·黄龙·塔公·四姑娘山 行程">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-text-size-adjust:100%}
 :root{
@@ -17,92 +17,53 @@
 body{
 font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
 background:var(--bg); color:var(--ink);
--webkit-font-smoothing:antialiased;
-padding-bottom:60px;
+-webkit-font-smoothing:antialiased; padding-bottom:60px;
 }
 .wrap{max-width:680px;margin:0 auto;padding:0 18px}
 
-/* ---- cover ---- */
-.cover{
-background:linear-gradient(160deg,#2b3a4a 0%,#45545f 55%,#6b6257 100%);
-color:#fff;padding:52px 18px 40px;text-align:center;
-}
+.cover{background:linear-gradient(160deg,#2b3a4a 0%,#45545f 55%,#6b6257 100%);color:#fff;padding:52px 18px 40px;text-align:center}
 .cover .kicker{font-size:12px;letter-spacing:.22em;opacity:.65;margin-bottom:14px}
-.cover h1{font-size:30px;line-height:1.3;font-weight:700;letter-spacing:.01em}
+.cover h1{font-size:30px;line-height:1.3;font-weight:700}
 .cover .dates{font-size:17px;margin-top:14px;opacity:.9;font-variant-numeric:tabular-nums}
 .cover .sub{font-size:13px;margin-top:20px;opacity:.6;line-height:1.9}
 
-/* ---- nav ---- */
-nav{
-background:var(--card);border-bottom:1px solid var(--line);
-padding:12px 0;position:sticky;top:0;z-index:50;
-box-shadow:0 1px 10px rgba(0,0,0,.04);
-}
+nav{background:var(--card);border-bottom:1px solid var(--line);padding:12px 0;position:sticky;top:0;z-index:50;box-shadow:0 1px 10px rgba(0,0,0,.04)}
 nav .wrap{display:flex;gap:7px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 nav .wrap::-webkit-scrollbar{display:none}
-nav a{
-flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink2);
-padding:6px 13px;border:1px solid var(--line);border-radius:100px;background:var(--bg);
-}
+nav a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink2);padding:6px 13px;border:1px solid var(--line);border-radius:100px;background:var(--bg)}
 nav a:active{background:var(--accent);color:#fff;border-color:var(--accent)}
 
-/* ---- sections ---- */
 section{padding:34px 0 6px}
-h2{
-font-size:21px;font-weight:700;margin-bottom:6px;
-display:flex;align-items:baseline;gap:9px;
-}
+h2{font-size:21px;font-weight:700;margin-bottom:6px;display:flex;align-items:baseline;gap:9px}
 h2 .n{font-size:12px;color:var(--accent);font-weight:600;letter-spacing:.1em}
 .lede{color:var(--ink3);font-size:14px;margin-bottom:20px}
 
-/* ---- generic card ---- */
-.card{
-background:var(--card);border:1px solid var(--line);border-radius:14px;
-padding:17px 18px;margin-bottom:12px;
-}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:17px 18px;margin-bottom:12px}
 .card h3{font-size:16px;margin-bottom:7px;font-weight:650}
 .card p{font-size:15px;color:var(--ink2)}
 .card p+p{margin-top:8px}
 
-/* ---- day card ---- */
-.day{
-background:var(--card);border:1px solid var(--line);border-radius:14px;
-margin-bottom:13px;overflow:hidden;
-border-left:4px solid var(--line);
-}
+.day{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:13px;overflow:hidden;border-left:4px solid var(--line)}
 .day.early{border-left-color:var(--warn)}
 .day.shoot{border-left-color:var(--accent)}
 .day.chill{border-left-color:var(--ok)}
 .day.move{border-left-color:var(--cool)}
 .day-h{padding:15px 17px 13px;border-bottom:1px solid var(--line)}
-.day-date{
-font-size:12px;color:var(--ink3);letter-spacing:.06em;
-display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px;
-}
+.day-date{font-size:12px;color:var(--ink3);letter-spacing:.06em;display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px}
 .day-t{font-size:17px;font-weight:650;line-height:1.45}
-.tag{
-font-size:11px;padding:2px 8px;border-radius:100px;font-weight:600;letter-spacing:.02em;
-}
+.tag{font-size:11px;padding:2px 8px;border-radius:100px;font-weight:600}
 .tag.w{background:var(--warn-s);color:var(--warn)}
 .tag.a{background:var(--accent-s);color:var(--accent)}
 .tag.o{background:var(--ok-s);color:var(--ok)}
 .tag.c{background:var(--cool-s);color:var(--cool)}
 .day-b{padding:14px 17px 16px}
 
-/* ---- timeline ---- */
 .tl{list-style:none}
 .tl li{display:flex;gap:13px;font-size:15px;padding:3px 0;align-items:baseline}
-.tl .t{
-flex:0 0 52px;font-variant-numeric:tabular-nums;color:var(--accent);
-font-weight:600;font-size:13.5px;letter-spacing:.01em;
-}
+.tl .t{flex:0 0 52px;font-variant-numeric:tabular-nums;color:var(--accent);font-weight:600;font-size:13.5px}
 .tl .d{flex:1;color:var(--ink2)}
 
-/* ---- note ---- */
-.note{
-margin-top:13px;padding:12px 14px;border-radius:10px;font-size:14px;line-height:1.7;
-background:var(--bg);color:var(--ink2);border:1px solid var(--line);
-}
+.note{margin-top:13px;padding:12px 14px;border-radius:10px;font-size:14px;line-height:1.7;background:var(--bg);color:var(--ink2);border:1px solid var(--line)}
 .note.w{background:var(--warn-s);border-color:#f2e0c2;color:#7d4c0c}
 .note.a{background:var(--accent-s);border-color:#f5d8cc;color:#8a3818}
 .note.o{background:var(--ok-s);border-color:#cfe6da;color:#1f5a3e}
@@ -110,35 +71,27 @@ background:var(--bg);color:var(--ink2);border:1px solid var(--line);
 .note ul{margin:7px 0 0 17px}
 .note li{margin:3px 0}
 
-/* ---- lists ---- */
 ul.plain{list-style:none}
-ul.plain li{
-font-size:15px;color:var(--ink2);padding:7px 0 7px 17px;position:relative;
-border-bottom:1px dashed var(--line);
-}
+ul.plain li{font-size:15px;color:var(--ink2);padding:7px 0 7px 17px;position:relative;border-bottom:1px dashed var(--line)}
 ul.plain li:last-child{border-bottom:0}
 ul.plain li:before{content:"";position:absolute;left:2px;top:15px;width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.5}
 ul.plain li b{color:var(--ink);font-weight:650}
 
-/* ---- rows ---- */
 .row{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px}
 .row:last-child{border-bottom:0}
 .row .k{color:var(--ink2);flex:1}
 .row .v{color:var(--ink);font-weight:600;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.row.tot{border-top:2px solid var(--ink);border-bottom:0;margin-top:5px;padding-top:11px}
+.row.tot .k,.row.tot .v{font-weight:700;color:var(--ink);font-size:16px}
 
-/* ---- altitude ---- */
 .alt{display:flex;align-items:flex-end;gap:3px;height:120px;margin:6px 0 10px}
 .alt div{flex:1;background:linear-gradient(180deg,#8d9fb0,#c3c9cd);border-radius:3px 3px 0 0;min-height:4px}
 .alt div.hi{background:linear-gradient(180deg,var(--accent),#d98f74)}
 .altlab{display:flex;gap:3px;font-size:9.5px;color:var(--ink3);text-align:center;line-height:1.3}
 .altlab span{flex:1;overflow:hidden}
 
-/* ---- details ---- */
 details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:11px;overflow:hidden}
-summary{
-padding:15px 17px;font-size:16px;font-weight:650;cursor:pointer;list-style:none;
-display:flex;justify-content:space-between;align-items:center;gap:10px;
-}
+summary{padding:15px 17px;font-size:16px;font-weight:650;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
 summary::-webkit-details-marker{display:none}
 summary:after{content:"＋";color:var(--accent);font-weight:400;font-size:19px;flex:0 0 auto}
 details[open] summary{border-bottom:1px solid var(--line)}
@@ -155,9 +108,9 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
 
 <div class="cover">
   <div class="kicker">SICHUAN · NOVEMBER 2026</div>
-  <h1>川西 + 九寨沟<br>13 天行程</h1>
-  <div class="dates">11月4日 — 11月16日</div>
-  <div class="sub">九寨沟彩林 · 黄龙 · 熊猫 · 三星堆<br>塔公婚纱拍摄 · 四姑娘山</div>
+  <h1>川西 + 九寨沟</h1>
+  <div class="dates">10月30日 — 11月14日</div>
+  <div class="sub">伦敦直飞成都 · 九寨沟彩林 · 黄龙<br>熊猫 · 三星堆 · 塔公拍摄 · 四姑娘山</div>
 </div>
 
 <nav><div class="wrap">
@@ -168,37 +121,48 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
   <a href="#ticket">抢票</a>
   <a href="#alt">高原</a>
   <a href="#pack">行李</a>
+  <a href="#car">包车</a>
+  <a href="#money">预算</a>
   <a href="#todo">待办</a>
 </div></nav>
 
 <div class="wrap">
 
-<!-- ============ 概要 ============ -->
+<!-- 01 概要 -->
 <section id="intro">
 <h2><span class="n">01</span>这趟去干什么</h2>
 <p class="lede">一个核心任务，四个顺路的地方。</p>
 
 <div class="card" style="border-color:#f5d8cc;background:var(--accent-s)">
-  <h3 style="color:var(--accent)">★ 核心任务：11月11日 塔公拍摄</h3>
+  <h3 style="color:var(--accent)">★ 核心任务：11月9日 塔公拍摄</h3>
   <p>拍摄方 <b>路可司公园 LucasPark</b>，门店在甘孜州康定市塔公镇新村。</p>
-  <p><b>拍摄只有 1 天。</b>下雪就得改期。全部行程都围着这一天排。</p>
+  <p><b>拍摄只有 1 天。</b>下雪就得改期，11月10日 是备用日。全部行程围着这一天排。</p>
+</div>
+
+<div class="card">
+  <h3>两头的硬约束</h3>
+  <ul class="plain">
+    <li><b>10月30日</b> 从伦敦出发，<b>直飞成都天府</b>（国航）</li>
+    <li><b>11月14日</b> 必须到家 — 11月15日 休息一天，<b>11月16日 要上班</b></li>
+  </ul>
 </div>
 
 <div class="card">
   <h3>顺路玩的四个地方</h3>
   <ul class="plain">
-    <li><b>九寨沟</b> — 看彩林。11月初是秋色尾声</li>
-    <li><b>黄龙</b> — 看钙华彩池，3900米</li>
+    <li><b>九寨沟</b> — 11月5日，<b>正好卡在彩林巅峰期最后一天</b></li>
+    <li><b>黄龙</b> — 钙华彩池，3900米</li>
     <li><b>成都</b> — 大熊猫基地、三星堆博物馆</li>
     <li><b>四姑娘山</b> — 双桥沟，回程顺路</li>
   </ul>
 </div>
 
 <div class="card">
-  <h3>排行程的三条原则</h3>
+  <h3>排行程的四条原则</h3>
   <ul class="plain">
-    <li><b>拍摄日优先。</b>前后都留缓冲，下雪能顺延</li>
-    <li><b>只有三天早起。</b>11/5、11/10、11/11。其余都 9–10 点起</li>
+    <li><b>拍摄日优先。</b>后面留备用日，下雪能顺延</li>
+    <li><b>只有三天早起。</b>11/4、11/8、11/9。其余 9–10 点起或自然醒</li>
+    <li><b>关键日子全在工作日。</b>拍摄周一、双桥沟周四、熊猫周一</li>
     <li><b>成都当行李基地。</b>中间只带小件，不扛全部</li>
   </ul>
 </div>
@@ -206,46 +170,43 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
 
 <hr class="sp">
 
-<!-- ============ 路线 ============ -->
+<!-- 02 路线 -->
 <section id="route">
 <h2><span class="n">02</span>路线和海拔</h2>
-<p class="lede">成都是中转站，去了三次。海拔起伏很大。</p>
+<p class="lede">直飞成都，成都当大本营，三次出发三次回来。</p>
 
 <div class="card">
   <h3>走法</h3>
   <ul class="plain">
-    <li>安吉 <b>→ 飞机 3h →</b> 成都</li>
-    <li>成都 <b>→ 高铁 2.5h →</b> 黄龙 → 九寨沟</li>
-    <li>九寨沟 <b>→ 高铁 2h →</b> 成都（熊猫 + 三星堆）</li>
+    <li>伦敦 <b>→ 直飞 12h →</b> 成都（休息 4 天，倒时差）</li>
+    <li>成都 <b>→ 高铁 2.5h →</b> 黄龙 → 九寨沟 <b>→ 回成都</b></li>
     <li>成都 <b>→ 开车 10h →</b> 塔公（★拍摄）</li>
     <li>塔公 <b>→ 开车 6h →</b> 丹巴 → 四姑娘山</li>
-    <li>四姑娘山 <b>→ 开车 4.5h →</b> 成都 <b>→ 飞机 →</b> 安吉</li>
+    <li>四姑娘山 <b>→ 开车 4.5h →</b> 成都 <b>→ 飞机 →</b> 杭州</li>
   </ul>
 </div>
 
 <div class="card">
   <h3>全程海拔曲线</h3>
   <div class="alt">
-    <div style="height:3%"></div>
-    <div style="height:13%"></div>
-    <div style="height:51%"></div>
+    <div style="height:12%"></div>
+    <div style="height:47%"></div>
     <div class="hi" style="height:100%"></div>
-    <div style="height:76%"></div>
-    <div style="height:13%"></div>
-    <div style="height:66%"></div>
+    <div style="height:47%"></div>
+    <div style="height:12%"></div>
+    <div style="height:60%"></div>
+    <div class="hi" style="height:98%"></div>
+    <div style="height:77%"></div>
     <div class="hi" style="height:95%"></div>
-    <div style="height:85%"></div>
-    <div class="hi" style="height:95%"></div>
-    <div style="height:46%"></div>
-    <div style="height:82%"></div>
-    <div style="height:13%"></div>
+    <div style="height:42%"></div>
+    <div style="height:88%"></div>
+    <div style="height:12%"></div>
   </div>
   <div class="altlab">
-    <span>安吉<br>30</span>
     <span>成都<br>500</span>
     <span>沟口<br>2000</span>
     <span>黄龙<br>3900</span>
-    <span>川主寺<br>2977</span>
+    <span>沟口<br>2000</span>
     <span>成都<br>500</span>
     <span>康定<br>2560</span>
     <span>折多山<br>4298</span>
@@ -261,106 +222,78 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
 
 <hr class="sp">
 
-<!-- ============ 每日 ============ -->
+<!-- 03 每日 -->
 <section id="days">
 <h2><span class="n">03</span>每日行程</h2>
 <p class="lede">橙色＝要早起　红色＝拍摄日　绿色＝可以睡饱　蓝色＝长途赶路</p>
 
-<!-- 10/30 -->
 <div class="day move">
-  <div class="day-h">
-    <div class="day-date">10月30日 · 周五 <span class="tag c">起飞</span></div>
-    <div class="day-t">伦敦 → 上海浦东</div>
-  </div>
+  <div class="day-h"><div class="day-date">10月30日 · 周五 <span class="tag c">起飞</span></div>
+  <div class="day-t">伦敦 → 成都天府</div></div>
   <div class="day-b">
     <ul class="plain">
-      <li>直飞，约 <b>12 小时 20 分</b></li>
-      <li>伦敦到杭州<b>没有直飞</b>，必须飞浦东</li>
-      <li>挑<b>落地在下午 3 点前</b>的航班</li>
+      <li><b>国航直飞</b>，约 12 小时</li>
+      <li>希思罗（LHR）和盖特威克（LGW）都有航班，每周 18 班</li>
+      <li>挑<b>落地在下午 3 点前</b>的</li>
     </ul>
+    <div class="note">票价约 ¥4,079。比飞上海贵 ¥379，但省掉浦东→安吉→萧山→成都那一圈，<b>净省 ¥1,800–3,200 和 1.5 天</b>。</div>
   </div>
 </div>
 
-<!-- 10/31 -->
-<div class="day move">
-  <div class="day-h">
-    <div class="day-date">10月31日 · 周六 <span class="tag c">回家</span></div>
-    <div class="day-t">落地浦东 → 安吉</div>
-  </div>
-  <div class="day-b">
-    <ul class="plain">
-      <li>浦东到安吉约 <b>250 公里，开车 3–3.5 小时</b></li>
-      <li>浦东<b>没有</b>到安吉或湖州的直达大巴</li>
-      <li>最好家人开车来接，或提前约网约车</li>
-    </ul>
-    <div class="note">带 4 个月的行李，<b>不要走地铁换高铁</b>。倒时差状态下拖箱子换乘很折磨。</div>
-  </div>
-</div>
-
-<!-- 11/1 -->
 <div class="day chill">
-  <div class="day-h">
-    <div class="day-date">11月1日 · 周日 <span class="tag o">自然醒</span></div>
-    <div class="day-t">在家倒时差</div>
-  </div>
-  <div class="day-b">
-    <div class="note o"><b>睡到自然醒。不安排任何事。</b><br>伦敦到北京时差 8 小时，往东飞最难受。</div>
-  </div>
-</div>
-
-<!-- 11/2 -->
-<div class="day chill">
-  <div class="day-h">
-    <div class="day-date">11月2日 · 周一 <span class="tag o">起 9–10 点</span></div>
-    <div class="day-t">在家 · 染头 + 做指甲</div>
-  </div>
+  <div class="day-h"><div class="day-date">10月31日 · 周六 <span class="tag o">看航班</span></div>
+  <div class="day-t">落地成都 · 睡觉</div></div>
   <div class="day-b">
     <ul class="plain">
-      <li>在安吉本地做，不用跑杭州</li>
-      <li><b>今天开始吃红景天</b></li>
+      <li>天府机场到市区约 1 小时</li>
+      <li><b>住成都东站附近</b>，一直住到 11月3日</li>
+      <li>什么都不安排，倒头睡</li>
     </ul>
-    <div class="note w">红景天要<b>提前 7 天</b>开始吃才有用。11月2日开始，正好赶上11月5日上黄龙。</div>
+    <div class="note o"><b>妈妈从安吉寄的货，寄到这家酒店。</b>提前跟前台打招呼代收，写清入住日期和姓名。</div>
   </div>
 </div>
 
-<!-- 11/3 -->
 <div class="day chill">
-  <div class="day-h">
-    <div class="day-date">11月3日 · 周二 <span class="tag o">起 9–10 点</span></div>
-    <div class="day-t">在家 · 收拾行李</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月1日 · 周日 <span class="tag o">自然醒</span></div>
+  <div class="day-t">倒时差 · 不安排事</div></div>
   <div class="day-b">
-    <ul class="plain">
-      <li>收拾行李，准备商品</li>
-      <li><b>晚上 20:00 抢三星堆门票</b></li>
-    </ul>
-    <div class="note a"><b>定闹钟。</b>三星堆每晚 20:00 放票，提前 5 天。今天抢 11月8日 的。现场不卖票，常卖光。</div>
+    <div class="note o"><b>睡到自然醒。</b>伦敦到北京时差 8 小时，往东飞最难受。周日成都哪都挤，正好不出门。</div>
+    <div class="note w"><b>今天开始吃红景天。</b>要提前 3 天以上，11月4日 就上 3900 米了。</div>
   </div>
 </div>
 
-<!-- 11/4 -->
-<div class="day move">
-  <div class="day-h">
-    <div class="day-date">11月4日 · 周三 <span class="tag c">起 9:30</span></div>
-    <div class="day-t">安吉 → 成都</div>
-  </div>
+<div class="day chill">
+  <div class="day-h"><div class="day-date">11月2日 · 周一 <span class="tag o">自然醒</span></div>
+  <div class="day-t">成都大熊猫基地（下午场）</div></div>
   <div class="day-b">
     <ul class="tl">
-      <li><span class="t">11:30</span><span class="d">安吉城区坐大巴去萧山机场（约 2 小时，120 元）</span></li>
-      <li><span class="t">13:30</span><span class="d">到萧山机场</span></li>
-      <li><span class="t">15:00</span><span class="d">飞成都，约 3 小时</span></li>
-      <li><span class="t">18:00</span><span class="d">到成都。<b>住成都东站附近</b></span></li>
+      <li><span class="t">12:00</span><span class="d">到基地，<b>买下午票</b></span></li>
+      <li><span class="t">13:00</span><span class="d">慢慢逛</span></li>
+      <li><span class="t">16:00</span><span class="d">出园回酒店</span></li>
+      <li><span class="t">20:00</span><span class="d"><b>★ 抢三星堆门票（抢 11月7日 的）</b></span></li>
     </ul>
-    <div class="note"><b>成都酒店订 5 晚，同一家：</b>11/4、11/7、11/8、11/9、11/15。<br>订的时候说：中间要离开几天再回来，<b>行李寄存在这里</b>。</div>
+    <div class="note w"><b>11 月起票分两场，订票要选对：</b>
+      <ul><li>上午票入园 8:00–12:00</li><li>下午票入园 12:00–16:30</li><li>17:30 清园</li></ul>
+    </div>
+    <div class="note"><b>心理准备：</b>熊猫上午 8–10 点最活跃。下午部分在午睡，但仍能看到活动，而且人少。我们选了睡饱。</div>
   </div>
 </div>
 
-<!-- 11/5 -->
-<div class="day early">
-  <div class="day-h">
-    <div class="day-date">11月5日 · 周四 <span class="tag w">★ 起 7:30</span></div>
-    <div class="day-t">成都 → 黄龙 → 九寨沟</div>
+<div class="day chill">
+  <div class="day-h"><div class="day-date">11月3日 · 周二 <span class="tag o">起 9–10 点</span></div>
+  <div class="day-t">染头 + 做指甲 + 备货</div></div>
+  <div class="day-b">
+    <ul class="plain">
+      <li>成都做头发和美甲，选择比安吉多</li>
+      <li><b>买高原用品：</b>氧气瓶 2 罐、葡萄糖、唇膏、高倍防晒、暖宝宝</li>
+      <li>整理行李，<b>大箱子留成都</b></li>
+    </ul>
   </div>
+</div>
+
+<div class="day early">
+  <div class="day-h"><div class="day-date">11月4日 · 周三 <span class="tag w">★ 起 7:30</span></div>
+  <div class="day-t">成都 → 黄龙 → 九寨沟</div></div>
   <div class="day-b">
     <ul class="tl">
       <li><span class="t">08:10</span><span class="d">到成都东站</span></li>
@@ -373,93 +306,60 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
       <li><span class="t">18:00</span><span class="d">到九寨沟沟口</span></li>
     </ul>
     <div class="note a"><b>不要自己爬上去。坐索道上，走下来。</b>索道 16:00 停止售票。</div>
-    <div class="note o"><b>今晚睡在沟口 2000 米。</b>白天上高、晚上睡低，这是正确的高原适应方式，不是冒险。</div>
+    <div class="note o"><b>今晚睡在沟口 2000 米。</b>白天上高、晚上睡低，这是正确的高原适应方式，不是冒险。而且它帮你为塔公预适应。</div>
+    <div class="note"><b>这天要包当地车一天。</b>班车不会等你在黄龙玩的 4 小时。买「接站+黄龙+送沟口」的拼车产品，约 ¥400–600。</div>
   </div>
 </div>
 
-<!-- 11/6 -->
-<div class="day chill">
-  <div class="day-h">
-    <div class="day-date">11月6日 · 周五 <span class="tag o">起 9:30</span></div>
-    <div class="day-t">九寨沟一整天 · 看彩林</div>
-  </div>
+<div class="day shoot">
+  <div class="day-h"><div class="day-date">11月5日 · 周四 <span class="tag a">★ 彩林巅峰最后一天</span></div>
+  <div class="day-t">九寨沟一整天</div></div>
   <div class="day-b">
     <ul class="plain">
+      <li>起床 9:30，10:30 进沟</li>
       <li>走精华线：<b>树正沟、日则沟、则查洼沟</b></li>
       <li>主要景点：诺日朗瀑布、五花海、珍珠滩、长海、五彩池</li>
       <li><b>全程坐观光车，不用徒步</b></li>
       <li>今晚还住沟口，<b>不搬</b></li>
     </ul>
+    <div class="note a"><b>秋色巅峰期是 10月18日 到 11月5日。今天是最后一天。</b>这就是整个行程往前挪 2 天的理由。</div>
     <div class="note w">11 月闭园早，<b>观光车末班约 17:00</b>。10:30 进沟还有 6.5 小时，够走完。</div>
   </div>
 </div>
 
-<!-- 11/7 -->
 <div class="day chill">
-  <div class="day-h">
-    <div class="day-date">11月7日 · 周六 <span class="tag o">起 9:30</span></div>
-    <div class="day-t">九寨沟半天 → 成都</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月6日 · 周五 <span class="tag o">起 9:30</span></div>
+  <div class="day-t">九寨沟半天 → 成都</div></div>
   <div class="day-b">
     <ul class="tl">
       <li><span class="t">11:00</span><span class="d">再进沟，补昨天没看完的</span></li>
       <li><span class="t">13:00</span><span class="d">出沟</span></li>
-      <li><span class="t">13:30</span><span class="d">开 90 公里去黄龙九寨站</span></li>
+      <li><span class="t">13:30</span><span class="d">坐专线大巴去黄龙九寨站，90 公里</span></li>
       <li><span class="t">16:25</span><span class="d">高铁发车</span></li>
       <li><span class="t">18:07</span><span class="d">到成都东</span></li>
     </ul>
-    <div class="note">赶不上 16:25，后面还有 <b>17:50、18:19、19:00</b> 三班。不用急。</div>
+    <div class="note">赶不上 16:25，后面还有 <b>17:50、18:19、19:00</b> 三班。这天不用包车，大巴就行。</div>
   </div>
 </div>
 
-<!-- 11/8 -->
 <div class="day chill">
-  <div class="day-h">
-    <div class="day-date">11月8日 · 周日 <span class="tag o">起 10:00</span></div>
-    <div class="day-t">三星堆博物馆</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月7日 · 周六 <span class="tag o">起 10:00</span></div>
+  <div class="day-t">三星堆博物馆</div></div>
   <div class="day-b">
     <ul class="tl">
-      <li><span class="t">11:00</span><span class="d">从成都出发</span></li>
+      <li><span class="t">11:00</span><span class="d">从成都出发（滴滴，单程约 ¥150–200）</span></li>
       <li><span class="t">12:00</span><span class="d">到广汉三星堆博物馆</span></li>
       <li><span class="t">12:30</span><span class="d">开始参观</span></li>
-      <li><span class="t">17:00</span><span class="d">停止入馆（要在这之前进去）</span></li>
-      <li><span class="t">18:00</span><span class="d">回成都</span></li>
+      <li><span class="t">17:00</span><span class="d">停止入馆</span></li>
+      <li><span class="t">18:00</span><span class="d">回成都。<b>收拾东西，明天 6:30 起</b></span></li>
     </ul>
-    <div class="note">陈列馆 08:30–18:00，文物修复馆 09:00–18:00。<b>新馆很大，4–5 小时才看得完。</b>周一不闭馆，全年只有除夕关门。</div>
+    <div class="note">陈列馆 08:30–18:00。<b>新馆很大，4–5 小时才看得完。</b>周六人多一点，但它是限流预约制，人数有上限。</div>
   </div>
 </div>
 
-<!-- 11/9 -->
-<div class="day chill">
-  <div class="day-h">
-    <div class="day-date">11月9日 · 周一 <span class="tag o">自然醒</span></div>
-    <div class="day-t">成都大熊猫基地（下午场）</div>
-  </div>
-  <div class="day-b">
-    <ul class="tl">
-      <li><span class="t">12:00</span><span class="d">到基地，<b>买下午票</b></span></li>
-      <li><span class="t">13:00</span><span class="d">慢慢逛</span></li>
-      <li><span class="t">16:00</span><span class="d">出园回酒店</span></li>
-      <li><span class="t">晚上</span><span class="d"><b>早睡。明天 6:30 起床</b></span></li>
-    </ul>
-    <div class="note w"><b>11 月起票分上午场和下午场，订票要选对：</b>
-      <ul>
-        <li>上午票入园 8:00–12:00</li>
-        <li>下午票入园 12:00–16:30</li>
-        <li>17:30 开始清园</li>
-      </ul>
-    </div>
-    <div class="note"><b>心理准备：</b>熊猫上午 8–10 点最活跃。下午<b>部分熊猫在午睡</b>，但仍能看到活动，而且人比上午少。我们选了睡饱。</div>
-  </div>
-</div>
-
-<!-- 11/10 -->
 <div class="day early">
-  <div class="day-h">
-    <div class="day-date">11月10日 · 周二 <span class="tag w">★ 起 6:30</span></div>
-    <div class="day-t">成都 → 塔公（整天车）</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月8日 · 周日 <span class="tag w">★ 起 6:30</span></div>
+  <div class="day-t">成都 → 塔公（整天车）</div></div>
   <div class="day-b">
     <ul class="tl">
       <li><span class="t">07:30</span><span class="d">司机到酒店接，出发</span></li>
@@ -470,16 +370,13 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
       <li><span class="t">晚上</span><span class="d"><b>去路可司门店试装、对风格</b></span></li>
     </ul>
     <div class="note a"><b>为什么必须早走。</b>折多山 4298 米，11 月有积雪和暗冰。<b>不能摸黑翻山。</b>这是安全问题，不是赶时间。<br>要求司机：<b>车上必须带防滑链。</b></div>
-    <div class="note">试装在店里做，不需要天光，晚上到了也能试。</div>
+    <div class="note o"><b>塔公酒店要订带弥散供氧的房型。</b>房间持续送氧，体感海拔降到 2000 米左右，第一晚睡眠质量差别很大。</div>
   </div>
 </div>
 
-<!-- 11/11 -->
 <div class="day shoot">
-  <div class="day-h">
-    <div class="day-date">11月11日 · 周三 <span class="tag a">★★ 起 6:00</span></div>
-    <div class="day-t">拍摄日 · 全天户外</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月9日 · 周一 <span class="tag a">★★ 起 6:00</span></div>
+  <div class="day-t">拍摄日 · 全天户外</div></div>
   <div class="day-b">
     <ul class="tl">
       <li><span class="t">06:00</span><span class="d">起床，化妆</span></li>
@@ -489,41 +386,31 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
       <li><span class="t">16:30</span><span class="d">第四个场景 — 黄昏转夜，收尾</span></li>
       <li><span class="t">18:15</span><span class="d">日落收工</span></li>
     </ul>
-    <div class="note a"><b>四个场景必须按太阳排，不能按路线顺手排。</b>一天只有一次日出一次日落。<br>场景九选四，目前倾向：黑沙滩（荒凉开头）→ 觉热牧场（开阔抓拍）→ 美式加油站（唯一能避风换装的）→ 诺贝松林雪山（黄昏收尾）。</div>
-    <div class="note w"><b>保暖是头等大事。</b>塔公 3700 米，白天最高 9℃，夜里 0℃，风大。穿婚纱在户外一整天会非常冷。<br>必带：
-      <ul>
-        <li>暖宝宝 20 片起</li>
-        <li>羽绒服（镜头外套着）</li>
-        <li>热水袋、保温杯</li>
-        <li>厚底靴（裙子盖住）</li>
-      </ul>
+    <div class="note a"><b>四个场景必须按太阳排，不能按路线顺手排。</b>一天只有一次日出一次日落。<br>九选四，目前倾向：<b>黑沙滩</b>（荒凉开头）→ <b>觉热牧场</b>（开阔抓拍）→ <b>美式加油站</b>（唯一能避风换装的）→ <b>诺贝松林雪山</b>（黄昏收尾）。</div>
+    <div class="note w"><b>保暖是头等大事。</b>塔公 3700 米，白天最高 9℃，夜里 0℃，风大。穿婚纱在户外一整天会非常冷。必带：
+      <ul><li>暖宝宝 20 片起</li><li>羽绒服（镜头外套着）</li><li>热水袋、保温杯</li><li>厚底靴（裙子盖住）</li></ul>
     </div>
+    <div class="note"><b>包车那天也要跟着。</b>车停在拍摄点附近，空调开着，当移动暖房。场景之间进去回温、喝热水、补妆。</div>
     <div class="note"><b>男方这天要做的：</b>拿衣服、递暖宝宝、挡风，<b>盯着对方的嘴唇颜色</b>。嘴唇发紫就是缺氧，马上停下来吸氧。</div>
   </div>
 </div>
 
-<!-- 11/12 -->
 <div class="day chill">
-  <div class="day-h">
-    <div class="day-date">11月12日 · 周四 <span class="tag o">起 9–10 点</span></div>
-    <div class="day-t">选片 + 逛塔公</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月10日 · 周二 <span class="tag o">起 9–10 点</span></div>
+  <div class="day-t">选片 + 逛塔公</div></div>
   <div class="day-b">
     <ul class="plain">
       <li><b>选片只要 1–2 小时</b></li>
       <li>剩下时间逛：塔公寺、塔公草原、<b>雅拉雪山 5884 米</b></li>
       <li><b>今天也是拍摄备用日</b></li>
     </ul>
-    <div class="note a"><b>如果 11月11日 下雪，拍摄挪到今天。</b>那就取消四姑娘山，直接回成都。</div>
+    <div class="note a"><b>如果 11月9日 下雪，拍摄挪到今天。</b>那就压缩四姑娘山，或者直接回成都。<br>后面还有 11月13日 和 11月15日 两天缓冲，不会撞上班。</div>
   </div>
 </div>
 
-<!-- 11/13 -->
 <div class="day move">
-  <div class="day-h">
-    <div class="day-date">11月13日 · 周五 <span class="tag c">起 7:30</span></div>
-    <div class="day-t">塔公 → 丹巴 → 四姑娘山</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月11日 · 周三 <span class="tag c">起 7:30</span></div>
+  <div class="day-t">塔公 → 丹巴 → 四姑娘山</div></div>
   <div class="day-b">
     <ul class="tl">
       <li><span class="t">08:30</span><span class="d">出发，塔公 → 八美（35 公里）</span></li>
@@ -536,12 +423,9 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
   </div>
 </div>
 
-<!-- 11/14 -->
 <div class="day chill">
-  <div class="day-h">
-    <div class="day-date">11月14日 · 周六 <span class="tag o">起 8:30</span></div>
-    <div class="day-t">四姑娘山 · 双桥沟一整天</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月12日 · 周四 <span class="tag o">起 8:30</span></div>
+  <div class="day-t">四姑娘山 · 双桥沟一整天</div></div>
   <div class="day-b">
     <ul class="plain">
       <li><b>只玩双桥沟。</b>不去长坪沟和海子沟</li>
@@ -550,46 +434,53 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
       <li>11 月看点：雪山 + 红杉林（金黄）+ 枯草，可能有雪</li>
     </ul>
     <div class="note">长坪沟要徒步 6 公里或骑马，往返 4–6 小时。海子沟要一整天纯徒步。<br><b>拍完婚纱照的人不该去爬山。</b></div>
+    <div class="note o">周四，工作日，人最少。</div>
   </div>
 </div>
 
-<!-- 11/15 -->
 <div class="day move">
-  <div class="day-h">
-    <div class="day-date">11月15日 · 周日 <span class="tag c">起 8:00</span></div>
-    <div class="day-t">四姑娘山 → 成都</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月13日 · 周五 <span class="tag c">起 8:00</span></div>
+  <div class="day-t">四姑娘山 → 成都</div></div>
   <div class="day-b">
     <ul class="tl">
       <li><span class="t">08:30</span><span class="d">出发</span></li>
-      <li><span class="t">08:45</span><span class="d"><b>猫鼻梁观景台</b>，停 20 分钟。能一次看到四座峰全景</span></li>
+      <li><span class="t">08:45</span><span class="d"><b>猫鼻梁观景台</b>，停 20 分钟。一次看到四座峰全景</span></li>
       <li><span class="t">09:10</span><span class="d">过巴朗山隧道，220 公里回成都</span></li>
-      <li><span class="t">13:30</span><span class="d">到成都</span></li>
+      <li><span class="t">13:30</span><span class="d">到成都。<b>取回寄存的大行李</b></span></li>
     </ul>
-    <div class="note w"><b>早上 8:30 就走。</b>周日下午都汶高速堵，要赶在中午前到成都。</div>
-    <div class="note">巴朗山隧道已经通了，不用翻 4523 米的垭口。隧道海拔 3850 米。</div>
+    <div class="note">巴朗山隧道已经通了，不用翻 4523 米的垭口。隧道海拔 3850 米。周五走，不堵。</div>
   </div>
 </div>
 
-<!-- 11/16 -->
 <div class="day move">
-  <div class="day-h">
-    <div class="day-date">11月16日 · 周一 <span class="tag c">看航班</span></div>
-    <div class="day-t">成都 → 安吉 · 到家</div>
-  </div>
+  <div class="day-h"><div class="day-date">11月14日 · 周六 <span class="tag c">看航班</span></div>
+  <div class="day-t">成都 → 杭州 · 到家</div></div>
   <div class="day-b">
     <ul class="plain">
-      <li>飞杭州萧山机场</li>
-      <li>萧山到安吉：大巴约 2 小时，或家人来接</li>
+      <li>飞杭州萧山机场，约 3 小时</li>
+      <li>萧山到安吉：大巴约 2 小时（¥120），或家人来接</li>
     </ul>
-    <div class="note a"><b>这张机票先别买。</b>等 11月11日 拍完再定。拍摄推迟的话要改期。</div>
+    <div class="note a"><b>这张机票先别买。</b>等 11月9日 拍完再定。拍摄推迟就要改期。</div>
   </div>
+</div>
+
+<div class="day chill">
+  <div class="day-h"><div class="day-date">11月15日 · 周日 <span class="tag o">休息</span></div>
+  <div class="day-t">在家休息一整天</div></div>
+  <div class="day-b">
+    <div class="note o"><b>这天是专门留的缓冲。</b>不是下飞机第二天就上班。<br>拍摄万一推迟一天，这天还能顶上。</div>
+  </div>
+</div>
+
+<div class="day">
+  <div class="day-h"><div class="day-date">11月16日 · 周一</div>
+  <div class="day-t">杭州上班</div></div>
 </div>
 </section>
 
 <hr class="sp">
 
-<!-- ============ 景点 ============ -->
+<!-- 04 景点 -->
 <section id="place">
 <h2><span class="n">04</span>各地介绍</h2>
 <p class="lede">点开看。每个都写了是什么、看什么、11 月什么样。</p>
@@ -604,8 +495,8 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
 
 <details><summary>九寨沟</summary><div class="det-b">
 <p>在阿坝州九寨沟县，<b>世界自然遗产</b>。三条沟：树正沟、日则沟、则查洼沟。海拔 2000–3100 米。</p>
-<p><b>彩林巅峰期是 10月18日 到 11月5日。</b>我们 11月6日 去，属于「第二周彩林未尽、游客减半」。错过最顶峰，但人少很多。</p>
-<p>11月15日前是旺季票：门票 190 + 观光车 90 = <b>280 元</b>。11月16日起降到 160 元，但那时彩林没了。</p>
+<p><b>彩林巅峰期是 10月18日 到 11月5日。我们 11月5日 去，正好是最后一天。</b></p>
+<p>11月15日前是旺季票：门票 190 + 观光车 90 = <b>280 元</b>。11月16日起降到 160 元，但那时彩林全没了。</p>
 <p><b>全程坐观光车，不用徒步。</b>11 月闭园早，观光车末班约 17:00。</p>
 </div></details>
 
@@ -626,7 +517,7 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
 <details><summary>塔公（拍摄地）</summary><div class="det-b">
 <p>在甘孜州康定市塔公镇，<b>海拔 3700 米</b>。住 3 晚。</p>
 <p>塔公寺是藏传佛教萨迦派寺庙。塔公草原正对<b>雅拉雪山 5884 米</b>。</p>
-<p>路可司门店在<b>塔公镇新村</b>。</p>
+<p>路可司门店在<b>塔公镇新村</b>。推荐的酒店基本都有弥散供氧和暖气。</p>
 <p><b>11 月气温：</b>白天最高 9℃，夜里 0℃ 左右，风大。</p>
 </div></details>
 
@@ -654,56 +545,56 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
 
 <hr class="sp">
 
-<!-- ============ 抢票 ============ -->
+<!-- 05 抢票 -->
 <section id="ticket">
 <h2><span class="n">05</span>要提前抢的票</h2>
-<p class="lede">四个都是实名预约。没票进不去。</p>
+<p class="lede">四个都是实名预约。没票进不去。好消息：全都能在成都订。</p>
 
 <div class="card" style="border-color:#f5d8cc;background:var(--accent-s)">
-  <h3 style="color:var(--accent)">★ 三星堆 — 11月3日 晚 20:00 抢</h3>
-  <p>参观日 11月8日。每晚 20:00 放票，<b>提前 5 天</b>。</p>
-  <p><b>定闹钟。</b>那天在安吉家里，信号好。现场不卖票，常卖光。</p>
+  <h3 style="color:var(--accent)">★ 三星堆 — 11月2日 晚 20:00 抢</h3>
+  <p>参观日 11月7日。每晚 20:00 放票，<b>提前 5 天</b>。</p>
+  <p><b>定闹钟。</b>那天你在成都酒店，网络稳。现场不卖票，常卖光。</p>
   <p>渠道：三星堆博物馆官方公众号 / 官网。</p>
 </div>
 
 <div class="card">
-  <h3>熊猫基地 — 提前几天订</h3>
-  <p>参观日 11月9日。<b>记得买「下午票」。</b>入园时间 12:00–16:30。</p>
+  <h3>熊猫基地 — 落地后就订</h3>
+  <p>参观日 11月2日。<b>记得买「下午票」</b>，入园 12:00–16:30。</p>
 </div>
 
 <div class="card">
-  <h3>九寨沟 — 提前 1–7 天</h3>
-  <p>参观日 11月6日。景区限流，实名预约。</p>
+  <h3>九寨沟 — 11月1日 到 11月4日 之间订</h3>
+  <p>参观日 11月5日。景区限流，提前 1–7 天。</p>
 </div>
 
 <div class="card">
   <h3>四姑娘山双桥沟 — 提前网上预约</h3>
-  <p>参观日 11月14日。</p>
+  <p>参观日 11月12日。</p>
 </div>
 </section>
 
 <hr class="sp">
 
-<!-- ============ 高原 ============ -->
+<!-- 06 高原 -->
 <section id="alt">
 <h2><span class="n">06</span>高原须知</h2>
 <p class="lede">三段在高海拔。提前准备，别硬扛。</p>
 
 <div class="card">
   <h3>哪几天在高海拔</h3>
-  <div class="row"><span class="k">11月5日 · 黄龙五彩池</span><span class="v">3900 米</span></div>
-  <div class="row"><span class="k">11月10日 · 路过折多山</span><span class="v">4298 米</span></div>
-  <div class="row"><span class="k">11月10–12日 · 塔公（住 3 晚）</span><span class="v">3700 米</span></div>
-  <div class="row"><span class="k">11月14日 · 双桥沟沟尾</span><span class="v">3840 米</span></div>
+  <div class="row"><span class="k">11月4日 · 黄龙五彩池</span><span class="v">3900 米</span></div>
+  <div class="row"><span class="k">11月8日 · 路过折多山</span><span class="v">4298 米</span></div>
+  <div class="row"><span class="k">11月8–10日 · 塔公（住 3 晚）</span><span class="v">3700 米</span></div>
+  <div class="row"><span class="k">11月12日 · 双桥沟沟尾</span><span class="v">3840 米</span></div>
 </div>
 
 <div class="card">
   <h3>提前吃药</h3>
-  <div class="note w"><b>11月2日开始吃红景天，一直吃到下山。</b>要提前 7 天开始才有用。</div>
+  <div class="note w"><b>11月1日落地第二天就开始吃红景天</b>，一直吃到下山。11月4日 就要上 3900 米了。</div>
 </div>
 
 <div class="card">
-  <h3>必带</h3>
+  <h3>必带（11月3日在成都买）</h3>
   <ul class="plain">
     <li><b>便携氧气瓶至少 2 罐</b>（车上一罐，房间一罐）</li>
     <li>葡萄糖口服液</li>
@@ -721,30 +612,37 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
     <li><b>嘴唇发紫 = 缺氧，马上吸氧</b></li>
   </ul>
   <div class="note o"><b>怎么减轻：</b>走慢点、多喝水、不喝酒、不剧烈运动。第一晚睡不好是正常的。</div>
-  <div class="note o"><b>好消息：</b>塔公的酒店基本都有<b>弥散供氧和暖气</b>。房间里持续送氧，体感海拔能降到 2000 米左右，第一晚睡眠质量差别很大。<br><b>订房时确认是带供氧的房型。</b></div>
+  <div class="note o"><b>两个有利条件：</b>① 落地成都先休息 4 天，状态是全程最好的。② 11月4日 上过黄龙 3900 米，给 11月8日 的塔公做了预适应。</div>
 </div>
 </section>
 
 <hr class="sp">
 
-<!-- ============ 行李 ============ -->
+<!-- 07 行李 -->
 <section id="pack">
 <h2><span class="n">07</span>行李怎么分装</h2>
-<p class="lede">成都酒店当基地。中间只带小件，不扛全部。</p>
+<p class="lede">成都酒店当基地。4 个月的大行李全程存那儿。</p>
 
 <div class="card">
-  <h3>去九寨沟（11/5–11/7，3 天）</h3>
+  <h3>成都订 7 晚，同一家</h3>
+  <div class="row"><span class="k">10月31日 – 11月3日</span><span class="v">4 晚</span></div>
+  <div class="row"><span class="k">11月6日 – 11月7日</span><span class="v">2 晚</span></div>
+  <div class="row"><span class="k">11月13日</span><span class="v">1 晚</span></div>
+  <div class="note">订的时候说清楚：中间要离开几天再回来，<b>大行李寄存在这里</b>。7 晚的预订，酒店不会为难。</div>
+</div>
+
+<div class="card">
+  <h3>去九寨沟（11/4–11/6，3 天）</h3>
   <p><b>只带一个登机箱 + 一个背包。</b></p>
   <ul class="plain">
     <li>冲锋衣、厚外套</li>
     <li>洗漱用品</li>
     <li>相机、充电器</li>
   </ul>
-  <div class="note">大箱子、塔公的厚衣服、商品<b>全留成都</b>。</div>
 </div>
 
 <div class="card">
-  <h3>去塔公 + 四姑娘山（11/10–11/15，6 天）</h3>
+  <h3>去塔公 + 四姑娘山（11/8–11/13，6 天）</h3>
   <p><b>只带一个箱子。</b></p>
   <ul class="plain">
     <li>保暖日常衣服（羽绒服、抓绒、厚袜子）</li>
@@ -754,27 +652,25 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
   </ul>
   <div class="note o"><b>拍摄的 4 套服装由路可司提供，不用自己带婚纱礼服。</b></div>
 </div>
-
-<div class="card">
-  <h3>真正要扛全部行李的</h3>
-  <p>只有头尾两趟：<b>安吉 → 成都</b>、<b>成都 → 安吉</b>。</p>
-</div>
 </section>
 
 <hr class="sp">
 
-<!-- ============ 包车 ============ -->
+<!-- 08 包车 -->
 <section id="car">
-<h2><span class="n">08</span>包车</h2>
+<h2><span class="n">08</span>用车安排</h2>
 
 <div class="card">
-  <h3>哪几段要包车</h3>
-  <ul class="plain">
-    <li>11月10日 成都 → 塔公</li>
-    <li>11月11日 拍摄日（路可司有车，要确认）</li>
-    <li>11月13日 塔公 → 丹巴 → 四姑娘山</li>
-    <li>11月15日 四姑娘山 → 成都</li>
-  </ul>
+  <h3>川西包车：6 天</h3>
+  <div class="row"><span class="k">11月8日 成都 → 塔公</span><span class="v">开车日</span></div>
+  <div class="row"><span class="k">11月9日 拍摄日（全天跟车）</span><span class="v">当暖房</span></div>
+  <div class="row"><span class="k">11月10日 逛塔公</span><span class="v">用车</span></div>
+  <div class="row"><span class="k">11月11日 塔公 → 四姑娘山</span><span class="v">开车日</span></div>
+  <div class="row"><span class="k">11月12日 去双桥沟</span><span class="v">用车</span></div>
+  <div class="row"><span class="k">11月13日 日隆 → 成都</span><span class="v">开车日</span></div>
+  <div class="row tot"><span class="k">6 天 × ¥800–1000</span><span class="v">¥4,800–6,000</span></div>
+  <div class="note"><b>含：</b>车辆、油费、过路费、停车费、司机食宿。<b>不含：</b>门票、你们吃饭。</div>
+  <div class="note w"><b>选普通 SUV（汉兰达、途昂）就行，¥800–1000 一天。</b><br>不要买普拉多、坦克 300 那种，要 ¥1100–1500，而你全程走铺装路面，用不上。<br><b>报价超过 ¥1200 就是按旺季报的</b>，直接说：11 月淡季，走的大路，800 行不行。</div>
 </div>
 
 <div class="card">
@@ -785,62 +681,132 @@ hr.sp{border:0;height:1px;background:var(--line);margin:26px 0}
     <li>先问清楚：下雪封折多山，备选路线是什么</li>
   </ul>
   <div class="note a"><b>不要自驾。</b>折多山 4298 米有暗冰。不熟路况很危险。</div>
-  <div class="note">参考价：SUV 含司机、油费、过路费、司机食宿，淡季约 <b>800–1000 元一天</b>。</div>
+</div>
+
+<div class="card">
+  <h3>九寨沟那段：不用包 6 天的车</h3>
+  <div class="row"><span class="k">11月4日 接站 + 黄龙 + 送沟口</span><span class="v">包一天 ¥400–600</span></div>
+  <div class="row"><span class="k">11月5日 景区内</span><span class="v">观光车，含门票</span></div>
+  <div class="row"><span class="k">11月6日 沟口 → 车站</span><span class="v">大巴 ¥50/人</span></div>
+  <div class="note"><b>只有 11月4日 要包车</b>——班车不会等你在黄龙玩的 4 小时。<br>搜索关键词：<b>黄龙九寨站 接站 黄龙 九寨沟 拼车</b>。携程、美团都有。</div>
+</div>
+
+<div class="card">
+  <h3>成都市内：用滴滴，不要包车</h3>
+  <div class="row"><span class="k">成都 → 广汉三星堆</span><span class="v">单程 ¥150–200</span></div>
+  <div class="row"><span class="k">成都 → 熊猫基地</span><span class="v">单程 ¥30–50</span></div>
+  <div class="note">包一天车要 ¥500 以上，不划算。</div>
 </div>
 </section>
 
 <hr class="sp">
 
-<!-- ============ 待办 ============ -->
+<!-- 09 预算 -->
+<section id="money">
+<h2><span class="n">09</span>预算</h2>
+<p class="lede">两个人。不含伦敦来回的国际机票。</p>
+
+<div class="card">
+  <h3>A · 拍摄尾款</h3>
+  <div class="row"><span class="k">路可司套餐总价</span><span class="v">¥22,000 或 23,777</span></div>
+  <div class="row"><span class="k">已付定金</span><span class="v">−¥4,500</span></div>
+  <div class="row tot"><span class="k">还要付</span><span class="v">¥17,500–19,277</span></div>
+  <div class="note a"><b>两处记录对不上，差 ¥1,777。翻合同核对。</b></div>
+</div>
+
+<div class="card">
+  <h3>B · 交通</h3>
+  <div class="row"><span class="k">天府机场 ↔ 市区（两次）</span><span class="v">¥200–300</span></div>
+  <div class="row"><span class="k">高铁 成都东 ↔ 黄龙九寨（两人往返）</span><span class="v">¥520–720</span></div>
+  <div class="row"><span class="k">九寨沟段用车</span><span class="v">¥500–700</span></div>
+  <div class="row"><span class="k">川西包车 6 天</span><span class="v">¥4,800–6,000</span></div>
+  <div class="row"><span class="k">成都市内 + 三星堆滴滴</span><span class="v">¥400–600</span></div>
+  <div class="row"><span class="k">成都 → 杭州 机票（两人）</span><span class="v">¥1,200–2,400</span></div>
+  <div class="row"><span class="k">萧山 → 安吉</span><span class="v">¥240</span></div>
+  <div class="row tot"><span class="k">小计</span><span class="v">¥7,860–10,960</span></div>
+</div>
+
+<div class="card">
+  <h3>C · 住宿（14 晚）</h3>
+  <div class="row"><span class="k">成都 7 晚 × ¥300–500</span><span class="v">¥2,100–3,500</span></div>
+  <div class="row"><span class="k">九寨沟沟口 2 晚 × ¥300–600</span><span class="v">¥600–1,200</span></div>
+  <div class="row"><span class="k">塔公 3 晚 × ¥400–700（带供氧）</span><span class="v">¥1,200–2,100</span></div>
+  <div class="row"><span class="k">四姑娘山日隆 2 晚 × ¥250–450</span><span class="v">¥500–900</span></div>
+  <div class="row tot"><span class="k">小计</span><span class="v">¥4,400–7,700</span></div>
+</div>
+
+<div class="card">
+  <h3>D · 门票（两人）</h3>
+  <div class="row"><span class="k">九寨沟（旺季 190+90）</span><span class="v">¥560</span></div>
+  <div class="row"><span class="k">黄龙 170 + 索道上行</span><span class="v">约 ¥500</span></div>
+  <div class="row"><span class="k">双桥沟 门票+观光车</span><span class="v">约 ¥320</span></div>
+  <div class="row"><span class="k">三星堆</span><span class="v">约 ¥144</span></div>
+  <div class="row"><span class="k">熊猫基地</span><span class="v">¥110</span></div>
+  <div class="row tot"><span class="k">小计</span><span class="v">约 ¥1,650</span></div>
+  <div class="note">黄龙索道和双桥沟的价格不确定，<b>以官网为准</b>。</div>
+</div>
+
+<div class="card">
+  <h3>E · 吃饭和杂项</h3>
+  <div class="row"><span class="k">吃饭（15 天两人，约 ¥200/天）</span><span class="v">¥2,500–3,800</span></div>
+  <div class="row"><span class="k">氧气、红景天、暖宝宝、防晒</span><span class="v">¥500–800</span></div>
+  <div class="row"><span class="k">杂项备用</span><span class="v">¥500</span></div>
+  <div class="row tot"><span class="k">小计</span><span class="v">¥3,500–5,100</span></div>
+</div>
+
+<div class="card" style="border-color:#f5d8cc;background:var(--accent-s)">
+  <h3 style="color:var(--accent)">合计</h3>
+  <div class="row"><span class="k">A 拍摄尾款</span><span class="v">¥17,500–19,277</span></div>
+  <div class="row"><span class="k">B 交通</span><span class="v">¥7,860–10,960</span></div>
+  <div class="row"><span class="k">C 住宿</span><span class="v">¥4,400–7,700</span></div>
+  <div class="row"><span class="k">D 门票</span><span class="v">约 ¥1,650</span></div>
+  <div class="row"><span class="k">E 吃饭杂项</span><span class="v">¥3,500–5,100</span></div>
+  <div class="row tot"><span class="k">总计</span><span class="v">¥34,900–44,700</span></div>
+  <div class="note a"><b>建议按 ¥40,000 预留。</b>取中偏上，留出下雪改期、临时加天的余量。<br><b>去掉拍摄尾款，纯旅行成本约 ¥17,400–25,400。</b></div>
+  <div class="note">国际机票另算：伦敦 → 成都直飞约 <b>¥4,079/人</b>。</div>
+</div>
+</section>
+
+<hr class="sp">
+
+<!-- 10 待办 -->
 <section id="todo">
-<h2><span class="n">09</span>还没定的事</h2>
+<h2><span class="n">10</span>待办和问题清单</h2>
 
-<div class="card" style="border-color:#cfe6da;background:var(--ok-s)">
-  <h3 style="color:var(--ok)">✓ 1. 塔公酒店供氧 — 已确认</h3>
-  <p>路可司推荐的那几家<b>基本都有弥散供氧和暖气</b>。</p>
-  <p>所以<b>日期定死了：11月11日拍摄，四姑娘山保留，13 天不变。</b>不用再加适应日。</p>
-  <p style="margin-top:10px"><b>订房时还要确认一句：</b>供氧是全酒店都有，还是只有某些房型有？<b>要订带供氧的那个房型。</b></p>
-</div>
-
-<div class="card">
-  <h3>2. 九选四最终定哪四个</h3>
-  <p>要等路可司给出实际动线和车程。</p>
-</div>
-
-<div class="card">
-  <h3>3. 机票还没买</h3>
+<div class="card" style="border-color:#f5d8cc;background:var(--accent-s)">
+  <h3 style="color:var(--accent)">★ 现在就做</h3>
   <ul class="plain">
-    <li>10月30日 伦敦 → 上海浦东（<b>落地要在下午 3 点前</b>）</li>
-    <li>11月4日 杭州萧山 → 成都</li>
-    <li>11月16日 成都 → 杭州萧山（<b>等拍完再买</b>）</li>
+    <li>1. <b>发微信给欧文：11月9日拍摄，锁档</b></li>
+    <li>2. <b>买 10月30日 伦敦 → 成都天府</b>的机票（落地在下午 3 点前）</li>
+    <li>3. 让妈妈<b>把货寄到成都酒店</b></li>
+    <li>4. 订成都酒店 7 晚，同一家，成都东站附近</li>
+    <li>5. 核对拍摄合同总价（¥22,000 还是 ¥23,777）</li>
   </ul>
 </div>
 
 <div class="card">
-  <h3>4. 合同条款</h3>
-  <div class="note a"><b>必须写死：因天气无法拍摄，免费改期。</b><br>拍摄只有 1 天，这条不能省。</div>
+  <h3>合同必须写死的一条</h3>
+  <div class="note a"><b>因天气无法拍摄，免费改期。</b><br>拍摄只有 1 天，这条不能省。</div>
 </div>
-</section>
-
-<hr class="sp">
-
-<!-- ============ 问题清单 ============ -->
-<section id="ask">
-<h2><span class="n">10</span>要问拍摄方的问题</h2>
-<p class="lede">可以直接复制发给欧文。</p>
 
 <div class="card">
+  <h3>要问路可司（欧文）的问题</h3>
   <ul class="plain">
-    <li>1. <b>11月11日拍摄，帮我锁档</b></li>
+    <li>1. <b>11月9日拍摄，帮我锁档</b></li>
     <li>2. 成都到塔公实际开多久？建议几点从成都出发？</li>
-    <li>3. 塔公酒店能帮订吗？要有暖气和<b>弥散供氧</b>的</li>
+    <li>3. 塔公酒店能帮订吗？要<b>带弥散供氧的房型</b></li>
     <li>4. 全天在 3700 米户外，保暖方案是什么？有没有保姆车能换装回温？</li>
     <li>5. 九选四，从塔公出发各自车程多久？一天跑得完吗？</li>
     <li>6. 11 月中拍，这几个场景有没有哪个会因为季节废掉？</li>
     <li>7. 「小云绕」是什么地貌？车程多久？</li>
     <li>8. 同一天素材，多剪一条 150 秒成片加多少钱？</li>
-    <li>9. 回程包车两种走法各报个价：<br>　 ① 塔公直接回成都，一天<br>　 ② 塔公→八美→丹巴→小金→四姑娘山→成都，三天</li>
+    <li>9. 回程包车报价：塔公 → 八美 → 丹巴 → 小金 → 四姑娘山 → 成都，3 天</li>
   </ul>
+</div>
+
+<div class="card">
+  <h3>拍完再买的</h3>
+  <p><b>11月14日 成都 → 杭州的机票。</b>等 11月9日 拍完再定，拍摄推迟就要改期。</p>
 </div>
 </section>
 
